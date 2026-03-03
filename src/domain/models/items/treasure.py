@@ -1,4 +1,4 @@
-from BasicItem import item
+from .BasicItem import item
 
 class treasure(item):
     def __init__(self, value: int):

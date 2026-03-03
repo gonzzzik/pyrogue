@@ -1,4 +1,4 @@
-from items.weapons import weapon, arm
+from .items.weapons import weapon, arm
 
 class Player:
     def __init__(self):

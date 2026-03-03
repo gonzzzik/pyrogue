@@ -1,4 +1,4 @@
-from level import Level
+from .level import Level
 from ..player import Player
 from ..backpack import Backpack
 from ...services.generate.level_generator_servise import LevelGenerator
@@ -12,7 +12,9 @@ class Game:
     
     @singledispatch
     def __init__(self, size_x: int, size_y: int) -> None:
-        self.lvl: Level = LevelGenerator.generate(size_x, size_y)
+        # Create level using LevelGenerator instance
+        generator = LevelGenerator()
+        self.lvl: Level = generator.generate(size_x, size_y)
         self.hero: Player = Player()
         self.inventory: Backpack = Backpack()
       

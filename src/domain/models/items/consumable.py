@@ -1,4 +1,4 @@
-from BasicItem import  item, ABC
+from .BasicItem import  item, ABC
 
 class consumable(item, ABC): 
     def __init__(self, name:str, restore:int, subtype: str):

@@ -1,7 +1,7 @@
-from items.consumable import food, scroll, elixir
-from items.treasure import treasure
-from items.weapons import weapon
-from items.BasicItem import item
+from .items.consumable import food, scroll, elixir
+from .items.treasure import treasure
+from .items.weapons import weapon
+from .items.BasicItem import item
 
 
 class Backpack:

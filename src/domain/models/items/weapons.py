@@ -1,4 +1,4 @@
-from BasicItem import item
+from .BasicItem import item
 
 class weapon(item): # maybe do it ABC if weapon will be in 
     def __init__(self, name: str, bonus: int):
