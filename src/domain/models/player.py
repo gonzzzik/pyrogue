@@ -1,6 +1,6 @@
 from items.weapons import weapon, arm
 
-class player:
+class Player:
     def __init__(self):
         self._max_health = 200
         self._health = 200

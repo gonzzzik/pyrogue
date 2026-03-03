@@ -4,7 +4,7 @@ from items.weapons import weapon
 from items.BasicItem import item
 
 
-class backpack:
+class Backpack:
     
     MAX_SLOTS = 9
     
